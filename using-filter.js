@@ -12,3 +12,14 @@ const findNumbers = list => {
 
 findNumbers(numbers)
 
+const zipcodes = [215, 561, 889, 299, 965, 318, 935, 893, 433, 706, 732, 805, 633, 156, 978, 914, 621, 626, 636, 890, 895, 545, 328, 448, 948, 717, 769, 887, 598, 693, 895, 712, 773, 665, 423, 134, 449, 296, 193, 359, 273, 546, 591, 872, 890, 114, 861, 145, 880, 572]
+
+const findEspecifcNumber = (list, expectedNum) => {
+    if (list.filter(num => num == expectedNum) == expectedNum) {
+        console.log(`The number ${expectedNum} was found`)
+    } else {
+        console.log(`Couldn't find the number ${expectedNum} on this list`)
+    }
+}
+
+findEspecifcNumber(zipcodes, 54)
